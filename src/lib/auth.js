@@ -1,11 +1,8 @@
 // src/lib/auth.js
 import { supabase } from './supabase.js'
 // Test with minimal data
-const { data, error } = await supabase.auth.signUp({
-  email: 'test@example.com',
-  password: 'testpassword123'
-})
-console.log('Minimal signup result:', { data, error })
+
+
 export const authAPI = {
   async signUp(email, password, userData) {
     // First, just try the basic signup without custom profile creation
